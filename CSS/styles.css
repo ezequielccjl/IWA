@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#svg{
+    height: 100vh;
+    width: 100%;
+    background-color: #070a1d;
+}
+
+#logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: llenar 2.5s  forwards 3.8s;
+}
+
+/*--------------- INTERNET ----------------*/
+
+/*I*/
+#logo path:nth-child(1){
+    stroke-dasharray: 198;
+    stroke-dashoffset: 198;
+    animation: anim-trazo 0.2s ease forwards;
+}
+/*N*/
+#logo path:nth-child(2){
+    stroke-dasharray: 328;
+    stroke-dashoffset: 328;
+    animation: anim-trazo 0.4s ease forwards 214ms;
+}
+/*T*/
+#logo path:nth-child(3){
+    stroke-dasharray: 239;
+    stroke-dashoffset: 239;
+    animation: anim-trazo 0.6s ease forwards 428ms;
+}
+/*E*/
+#logo path:nth-child(4){
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: anim-trazo 0.8s ease forwards 642ms;
+}
+/*R*/
+#logo path:nth-child(5){
+    stroke-dasharray: 215;
+    stroke-dashoffset: 215;
+    animation: anim-trazo 1s ease forwards 856ms;
+}
+
+/*N*/
+#logo path:nth-child(6){
+    stroke-dasharray: 328;
+    stroke-dashoffset: 328;
+    animation: anim-trazo 1.2s ease forwards 1070ms;
+}
+/*E*/
+#logo path:nth-child(7){
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: anim-trazo 1.4s ease forwards 1284ms;
+}
+/*T*/
+#logo path:nth-child(8){
+    stroke-dasharray: 239;
+    stroke-dashoffset: 239;
+    animation: anim-trazo 1.6s ease forwards 1500ms;
+}
+
+/*---------------- WAREHOUSE ---------------*/
+
+/*W*/
+#logo path:nth-child(9){
+    stroke-dasharray: 583;
+    stroke-dashoffset: 583;
+    animation: anim-trazo 2.4s ease forwards 2.4s;
+}
+/*A*/
+#logo path:nth-child(10){
+    stroke-dasharray: 332;
+    stroke-dashoffset: 332;
+    animation: anim-trazo 2.2s ease forwards 2.1s;
+}
+/*R*/
+#logo path:nth-child(11){
+    stroke-dasharray: 215;
+    stroke-dashoffset: 215;
+    animation: anim-trazo 2s ease forwards 1.8s;
+}
+/*E*/
+#logo path:nth-child(12){
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: anim-trazo 1.8s ease forwards 1.5s;
+}
+/*H*/
+#logo path:nth-child(13){
+    stroke-dasharray: 368;
+    stroke-dashoffset: 368;
+    animation: anim-trazo 1.5s ease forwards 1.2s;
+}
+/*O*/
+#logo path:nth-child(14){
+    stroke-dasharray: 276;
+    stroke-dashoffset: 276;
+    animation: anim-trazo 1.2s ease forwards 0.9s;
+}
+/*U*/
+#logo path:nth-child(15){
+    stroke-dasharray: 328;
+    stroke-dashoffset: 328;
+    animation: anim-trazo 0.9s ease forwards 0.6s;
+}
+/*S*/
+#logo path:nth-child(16){
+    stroke-dasharray: 333;
+    stroke-dashoffset: 333;
+    animation: anim-trazo 0.6s ease forwards 0.3s;
+}
+/*E*/
+#logo path:nth-child(17){
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: anim-trazo 0.3s ease forwards;
+}
+
+/*---------------- APPAREL ---------------*/
+
+/*A*/
+#logo path:nth-child(18){
+    stroke-dasharray: 375;
+    stroke-dashoffset: 375;
+    animation: anim-trazo 0.4s ease forwards 250ms;
+}
+/*P*/
+#logo path:nth-child(19){
+    stroke-dasharray: 375;
+    stroke-dashoffset: 375;
+    animation: anim-trazo 0.4s ease forwards 500ms;
+}
+/*P*/
+#logo path:nth-child(20){
+    stroke-dasharray: 375;
+    stroke-dashoffset: 375;
+    animation: anim-trazo 0.6s ease forwards 750ms;
+}
+/*A*/
+#logo path:nth-child(21){
+    stroke-dasharray: 332;
+    stroke-dashoffset: 332;
+    animation: anim-trazo 0.8s ease forwards 1s;
+}
+/*R*/
+#logo path:nth-child(22){
+    stroke-dasharray: 215;
+    stroke-dashoffset: 215;
+    animation: anim-trazo 1s ease forwards 1250ms;
+}
+/*E*/
+#logo path:nth-child(23){
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: anim-trazo 1.2s ease forwards 1500ms;
+}
+/*L*/
+#logo path:nth-child(24){
+    stroke-dasharray: 203;
+    stroke-dashoffset: 203;
+    animation: anim-trazo 1.4s ease forwards 1750ms;
+}
+
+@keyframes anim-trazo{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes llenar{
+    0%{
+        fill: transparent;
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+        stroke-dasharray: none;
+        fill: #ffffff;
+        
+    }
+}
+
